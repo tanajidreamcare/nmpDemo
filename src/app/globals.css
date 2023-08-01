@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.rep {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+
+@media (max-width: 768px) {
+  .rep {
+    height: 100vh;
+  }
+}
+
+.box-shadow{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.polygonOrange {
+  background: linear-gradient(1deg, #E7581A 50%, rgba(231, 88, 26, 0.00) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 62%, 0% 80%);
+}
+
+.curvedPOl{
+  border-radius: 0px 50px 0px 0px;
+}
+
+.text {
+  text-shadow: 1px 1px 2px rgba(0, 0, 20, 0.5);
+}
+
+
+.buttonBlack {
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: rgb(55 65 81);
+  transition: color 0.5s;
+}
+
+.buttonBlack:hover {
+  color: white;
+}
+
+.buttonBlack span {
+  display: block;
+  padding: 5px;
+  z-index: 10;
+}
+
+.buttonBlack span:first-child {
+  transition: width 0.5s;
+}
+
+.buttonBlack:hover span:first-child {
+  width: 100%;
+}
